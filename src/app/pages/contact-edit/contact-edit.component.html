@@ -1,0 +1,21 @@
+<div class="contact-form">
+    <div>
+        <div>
+            <label for="name">Name</label>
+            <input name="name" type="text" value={{editableContact.name}} (keyup)="inputChange($event)">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input name="email" type="text" value={{editableContact.email}} (keyup)="inputChange($event)">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input name="phone" type="text" value={{editableContact.phone}} (keyup)="inputChange($event)">
+        </div>
+    </div>
+</div>
+<div class="contact-edit-buttons">
+    <button class="btn" (click)="saveContact()">Save</button>
+    <button class="btn" (click)="goBack()">Back</button>
+    <button class="btn" (click)="delete()">Delete</button>
+</div>

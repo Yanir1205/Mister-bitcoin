@@ -1,0 +1,17 @@
+.contact-preview-container {
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  font-size: 1.1rem;
+  cursor: pointer;
+  .user-img {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+.contact-preview-container:hover {
+  color: orangered;
+}

@@ -1,0 +1,34 @@
+.contact-page-container {
+  display: flex;
+  flex-direction: column-reverse;
+  .filter-and-add-contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 95vw;
+  }
+  .add-contact-container {
+    display: flex;
+    justify-content: center;
+    .create-contact {
+      display: inline-block;
+      margin: 20px;
+      width: 35px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-list-container {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 66vh;
+  margin: 0 auto;
+}

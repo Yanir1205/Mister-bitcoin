@@ -1,0 +1,8 @@
+<div class="home-page-top-container">
+    <div class="home-container">
+        <p class="greeting">Hello {{user.name}}</p>
+        <p>Coins: {{user.coins}}</p>
+        <p>Value: {{coins$|async}}</p>
+    </div>
+    <transactions-list [moves]="user.moves"></transactions-list>
+</div>

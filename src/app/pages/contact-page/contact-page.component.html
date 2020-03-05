@@ -1,0 +1,16 @@
+<div class="contact-page-container">
+    <div class="filter-and-add-contact-container">
+        <div class="filter-container">
+            <app-filter (onFilter)="onFilter($event)"></app-filter>
+        </div>
+        <div class="contacts-list-container">
+            <contact-list [contacts]="contacts$|async"></contact-list>
+        </div>
+    </div>
+    <div class="add-contact-container">
+        <a [routerLink]="['/contact/edit']">
+            <!-- <img class="create-contact" src="../../../assets/icons/new contact4.png" /> -->
+            <img class="create-contact" src="../../../assets/add-group.png" />
+        </a>
+    </div>
+</div>

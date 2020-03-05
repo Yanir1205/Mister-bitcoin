@@ -1,0 +1,21 @@
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 20px;
+    border-bottom: 1px solid #ddbf6f;
+  }
+  
+  .main-nav-item {
+    transition: box-shadow 0.1s ease-in-out;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav-item.selected {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-color: #7fc7ff;
+  }

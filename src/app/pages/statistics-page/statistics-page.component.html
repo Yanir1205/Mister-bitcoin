@@ -1,0 +1,10 @@
+<!-- <h2>{{rate | currency:'$'}} </h2> -->
+<div class="statistics-container">
+    <h2>Current BTC rate: ${{(1/rate).toPrecision(8)}} US </h2>
+    <div *ngIf="chart1">
+        <app-chart [chart]="chart1"></app-chart>
+    </div>
+    <div *ngIf="chart2">
+        <app-chart [chart]="chart2"></app-chart>
+    </div>
+</div>

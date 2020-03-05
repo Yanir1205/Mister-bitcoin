@@ -1,0 +1,40 @@
+<div class="transaction-cmp-container">
+    <p class="transaction-contact">Transfer Bit to {{contact.name}}</p>
+    <div class="transaction-form-container">
+        <form class="transfer-form" (ngSubmit)="onSubmit(bitTransferForm.value)" [formGroup]="bitTransferForm">
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" formControlName="amount" [(ngModel)]="amount">
+        </form>
+        <button class="btn" (click)="onSubmit(bitTransferForm.value)">Transfer</button>
+    </div>
+    <div *ngIf="bitTransferForm.get('amount').invalid && (bitTransferForm.get('amount').dirty || bitTransferForm.get('amount').touched)"
+    class="alert alert-danger">
+    <div *ngIf="bitTransferForm.get('amount').errors.userDoesntHaveEnoughMoney">
+        Not enough money!
+    </div>
+</div>
+</div>
+
+
+
+<!-- <div class="signup-form-and-button">
+    <form class="signup-form" [formGroup]="userNameForm" (ngSubmit)="onSubmit(userNameForm.value)">
+        <input type="text" class="form__field" placeholder="Name" formControlName="name" name="signup" required
+            minlength="2">
+        <label for="name" class="form__label">Name</label>
+    </form>
+    <button class="btn" (click)="onSubmit(userNameForm.value)">Signup</button>
+</div>
+<div *ngIf="userNameForm.get('name').invalid && (userNameForm.get('name').dirty || userNameForm.get('name').touched)"
+    class="alert alert-danger">
+    <div *ngIf="userNameForm.get('name').errors.required">
+        Name is required.
+    </div>
+    <div *ngIf="userNameForm.get('name').errors.minlength">
+        Name must be at least 2 characters long.
+    </div>
+    <div *ngIf="userNameForm.get('name').errors.forbiddenName">
+        Forbidden name entered!
+    </div>
+</div>
+</div> -->

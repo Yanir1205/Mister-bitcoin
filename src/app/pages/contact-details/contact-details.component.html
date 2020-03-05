@@ -1,0 +1,15 @@
+<div class="contact-details-top-container">
+    <div class="contact-details-container">
+        <p>{{contact.name}}</p>
+        <p>{{contact.email}}</p>
+        <p>{{contact.phone}}</p>
+        <div class="contact-details-buttons">
+            <button class="btn" (click)="goBack()">Back</button>
+            <button class="btn" (click)="editContact()">Edit</button>
+        </div>
+    </div>
+    <div class="transactions-container">
+        <bit-transfer [contact]="contact" [userCoins]="user.coins"></bit-transfer>
+    </div>
+    <transactions-list [moves]="moves" [title]="title"></transactions-list>
+</div>

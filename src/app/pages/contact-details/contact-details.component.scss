@@ -1,0 +1,30 @@
+.contact-details-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  .contact-details-buttons {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+
+.transactions-container {
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-color: #4e4546;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.contact-details-top-container {
+  overflow-y: scroll;
+  height: 91vh;
+  margin: 0 auto;
+}

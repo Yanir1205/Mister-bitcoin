@@ -1,0 +1,11 @@
+.statistics-container {
+  font-family: Oxygen, "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: 91vh;
+  h2 {
+    color: white;
+  }
+}

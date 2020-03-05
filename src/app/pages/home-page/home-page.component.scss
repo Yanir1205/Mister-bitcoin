@@ -1,0 +1,14 @@
+.home-container {
+  color: white;
+  text-align: center;
+  font-family: Oxygen, "sans-serif";
+  .greeting {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}
+
+.home-page-top-container {
+  overflow-y: scroll;
+  height: 91vh;
+}

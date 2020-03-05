@@ -1,0 +1,8 @@
+<div class="transaction-list-container" *ngIf="moves.length>0">
+    <div class="transaction-title-container">
+        <p>{{title}}:</p>
+    </div>
+    <div class="transaction-preview-container" *ngFor="let move of moves; let i = index">
+        <transaction-preview *ngIf="i<numOfTransactionToDisplay" [move]="move"></transaction-preview>
+    </div>
+</div>
