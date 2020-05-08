@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "githubpage": "ng build --outputPath=docs"
+    "githubpage": "ng build --outputPath=docs --base-href=https://yanir1205.github.io/Bit-Pay/"
   },
   "private": true,
   "dependencies": {
